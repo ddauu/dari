@@ -13,43 +13,33 @@
             align-items: center;
             background-color: #f0f0f0;
         }
-        .viewer-container {
+        .viewer-container, .playground-container {
             position: relative;
-            width: 100%;
-            height: auto;
-            background-image: url('sand.jpg');
-            background-size: contain;
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+        }
+        .viewer-container {
+            background-image: url('sand.jpg');
+        }
+        .playground-container {
+            background-image: url('playground.jpg');
         }
         spline-viewer {
             display: block;
             width: 100%;
-            height: auto;
+            height: 100%;
         }
-        .middle-link {
+        .middle-link, .second-viewer {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
-        }
-        .playground-container {
-            position: relative;
-            width: 100%;
-        }
-        .playground-image {
-            width: 100%;
+            width: 50%; /* Adjust width as needed */
             height: auto;
-        }
-        .second-viewer {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 50%; /* Adjust as needed */
-            height: auto;
-            z-index: 1;
         }
     </style>
 </head>
@@ -59,7 +49,6 @@
         <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
     </div>
     <div class="playground-container">
-        <img src="playground.jpg" alt="Playground" class="playground-image">
         <div class="second-viewer">
             <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.4/build/spline-viewer.js"></script>
             <spline-viewer url="https://prod.spline.design/OlEFTVuGX9HPIJtO/scene.splinecode"></spline-viewer>
