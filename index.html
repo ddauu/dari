@@ -8,22 +8,24 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('sand.jpg');
-            background-size: cover;
-            background-position: center;
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: #f0f0f0;
         }
         .viewer-container {
             position: relative;
-            width: 100vw;
-            height: 50vh; /* Adjust as necessary */
+            width: 100%;
+            height: auto;
+            background-image: url('sand.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         spline-viewer {
             display: block;
             width: 100%;
-            height: 100%;
+            height: auto;
         }
         .middle-link {
             position: absolute;
@@ -40,10 +42,8 @@
 </head>
 <body>
     <div class="viewer-container">
-        <a href="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode" class="middle-link">
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.7.7/build/spline-viewer.js"></script>
-            <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
-        </a>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.7.7/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
     </div>
     <img src="playground.jpg" alt="Playground" class="playground-image">
 </body>
