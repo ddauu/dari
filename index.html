@@ -34,9 +34,22 @@
             transform: translate(-50%, -50%);
             z-index: 1;
         }
+        .playground-container {
+            position: relative;
+            width: 100%;
+        }
         .playground-image {
             width: 100%;
             height: auto;
+        }
+        .second-viewer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%; /* Adjust as needed */
+            height: auto;
+            z-index: 1;
         }
     </style>
 </head>
@@ -45,6 +58,12 @@
         <script type="module" src="https://unpkg.com/@splinetool/viewer@1.7.7/build/spline-viewer.js"></script>
         <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
     </div>
-    <img src="playground.jpg" alt="Playground" class="playground-image">
+    <div class="playground-container">
+        <img src="playground.jpg" alt="Playground" class="playground-image">
+        <div class="second-viewer">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.4/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/OlEFTVuGX9HPIJtO/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
 </body>
 </html>
