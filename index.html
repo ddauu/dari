@@ -3,54 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spline Viewer</title>
+    <title>Spline Viewer Example</title>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.9/build/spline-viewer.js"></script>
     <style>
         body {
             margin: 0;
-            padding: 0;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            background-color: #f0f0f0;
-        }
-        .viewer-container, .playground-container {
-            position: relative;
-            width: 100vw;
             height: 100vh;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .viewer-container {
-            background-image: url('sand.jpg');
-        }
-        .playground-container {
-            background-image: url('playground.jpg');
+            background-color: black;
         }
         spline-viewer {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-        .middle-link, .second-viewer {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-            width: 50%; /* Adjust width as needed */
-            height: auto;
+            width: 80%;
+            height: 80%;
+            border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <div class="viewer-container">
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.7.7/build/spline-viewer.js"></script>
-        <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
-    </div>
-    <div class="playground-container">
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.4/build/spline-viewer.js"></script>
-        <spline-viewer url="https://prod.spline.design/OlEFTVuGX9HPIJtO/scene.splinecode"></spline-viewer>
-    </div>
+    <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
 </body>
 </html>
