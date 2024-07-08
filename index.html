@@ -13,14 +13,35 @@
             align-items: center;
             height: 100vh;
             background-color: black;
+            position: relative;
+            color: white;
+            overflow: hidden;
         }
         spline-viewer {
-            width: 100%;
-            height: 100%;
+            width: 80%;
+            height: 80%;
+            z-index: 1;
+        }
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4vw;
+            line-height: 1.5;
+            text-align: center;
+            max-width: 80%;
+            opacity: 0.1;
+            z-index: 0;
         }
     </style>
 </head>
 <body>
+    <div class="background-text">
+        Desertification is the process by which vegetation in drylands i.e. arid and semi-arid lands, such as grasslands or shrublands, decreases and eventually disappears. The concept does not refer to the physical expansion of existing deserts, but to the various processes that threaten to turn currently non-desert ecosystems into deserts. <br><br>
+        Human activities, including deforestation and the overexploitation of aquifers, accelerate desertification. The effects of climate change, which is also driven by humans, and the destruction it causes in the form of extreme weather phenomena such as droughts, hurricanes, fires, etc. must be added to this. <br><br>
+        According to the UN, more than 24 billion tonnes of fertile soil disappear every year. In fact, today two-thirds of the Earth is undergoing a process of desertification and, if no action is taken, 1.5 million km2 of agricultural land, an area equivalent to the entire arable land of India, which is essential for maintaining biodiversity and feeding the population, will be lost by 2050.
+    </div>
     <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
 </body>
 </html>
