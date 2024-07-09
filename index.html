@@ -15,12 +15,12 @@
             background-color: black;
             position: relative;
             color: white;
-            overflow: hidden;
             font-family: Arial, sans-serif;
+            overflow: hidden;
         }
         spline-viewer {
-            width: 120%;
-            height: 120%;
+            width: 150%;
+            height: 150%;
             z-index: 1;
         }
         .background-text {
@@ -29,12 +29,15 @@
             left: 0;
             right: 0;
             bottom: 0;
-            font-size: 3vw;
-            line-height: 1.5;
+            font-size: 2vw; /* Adjusted to ensure text fits within viewport */
+            line-height: 1.2;
             text-align: left;
             padding: 20px;
-            overflow-y: auto;
             z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
         }
     </style>
 </head>
