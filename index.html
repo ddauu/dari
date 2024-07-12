@@ -13,15 +13,15 @@
             align-items: center;
             height: 100vh;
             background-color: black;
+            position: relative;
             color: white;
             font-family: Arial, sans-serif;
             overflow: hidden;
-            position: relative;
         }
         spline-viewer {
             width: 220%;
             height: 220%;
-            z-index: 0;
+            z-index: 0; /* Lower z-index */
         }
         .background-text {
             position: absolute;
@@ -29,14 +29,15 @@
             left: 0;
             right: 0;
             bottom: 0;
-            font-size: 2.5vw;
+            font-size: 2.5vw; /* Increased font size */
             line-height: 1.2;
             text-align: left;
-            padding: 20px;
-            z-index: 1;
+            padding: 20px; /* Added padding */
+            z-index: 1; /* Higher z-index */
             box-sizing: border-box;
-            overflow-y: auto; /* Changed to auto */
-            display: block; /* Changed to block */
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column; /* Added flex direction */
         }
     </style>
 </head>
@@ -46,16 +47,18 @@
         Human activities, including deforestation and the overexploitation of aquifers, accelerate desertification. The effects of climate change, which is also driven by humans, and the destruction it causes in the form of extreme weather phenomena such as droughts, hurricanes, fires, etc. must be added to this. <br><br>
         According to the UN, more than 24 billion tonnes of fertile soil disappear every year. In fact, today two-thirds of the Earth is undergoing a process of desertification and, if no action is taken, 1.5 million km2 of agricultural land, an area equivalent to the entire arable land of India, which is essential for maintaining biodiversity and feeding the population, will be lost by 2050.<br><br>
         Desertification and desertisation: differences<br><br>
-        Although they are often used interchangeably, the difference lies in the human influence on the process. In desertisation, the causes of deterioration are strictly natural, as in the case of the Sahara mentioned above, but in desertification, although natural causes also play a role, human activities are a determining factor.<br><br>
+Although they are often used interchangeably, the difference lies in the human influence on the process. In desertisation, the causes of deterioration are strictly natural, as in the case of the Sahara mentioned above, but in desertification, although natural causes also play a role, human activities are a determining factor.<br><br>
         How to avoid desertification
-        Among the Sustainable Development Goals (SDGs) adopted by the UN is SDG 15 (Life of terrestrial ecosystems), which aims to protect, restore and promote the sustainable use of terrestrial ecosystems, sustainably manage forests, stop and reverse land degradation, combat desertification and stop biodiversity loss.<br><br>
-        The solution at the local level to curb desertification is sustainable management of natural resources, especially the conservation of fertile soils and water resources. In this sense, some of the keys that can help to avoid desertification are:<br><br>
-        Promote coordinated land-use planning, including the management of water resources, livestock and agricultural activities.<br><br>
-        Preserve vegetation cover, which plays a key role in protecting the soil from wind and water erosion, by building barriers and stabilising dunes.<br><br>
-        Promote climate change education to raise awareness, in particular by showing the consequences of desertification and ways to prevent it.<br><br>
-        Focus on organic farming and sustainable practices, such as cover crops or rotational crops, which prevent soil erosion and drought.<br><br>
-        Commit to reforestation to regenerate vegetation cover, reactivate moisture circulation and generate biodiversity.<br><br>
-        Encourage rotational grazing, which limits pressure to a particular area while others regenerate, through co-existence with crops that allow more efficient nutrient cycling.<br><br>
+Among the Sustainable Development Goals (SDGs) adopted by the UN is SDG 15 (Life of terrestrial ecosystems), which aims to protect, restore and promote the sustainable use of terrestrial ecosystems, sustainably manage forests, stop and reverse land degradation, combat desertification and stop biodiversity loss.<br><br>
+
+The solution at the local level to curb desertification is sustainable management of natural resources, especially the conservation of fertile soils and water resources. In this sense, some of the keys that can help to avoid desertification are:<br><br>
+
+Promote coordinated land-use planning, including the management of water resources, livestock and agricultural activities.<br><br>
+Preserve vegetation cover, which plays a key role in protecting the soil from wind and water erosion, by building barriers and stabilising dunes.<br><br>
+Promote climate change education to raise awareness, in particular by showing the consequences of desertification and ways to prevent it.<br><br>
+Focus on organic farming and sustainable practices, such as cover crops or rotational crops, which prevent soil erosion and drought.<br><br>
+Commit to reforestation to regenerate vegetation cover, reactivate moisture circulation and generate biodiversity.<br><br>
+Encourage rotational grazing, which limits pressure to a particular area while others regenerate, through co-existence with crops that allow more efficient nutrient cycling.<br><br>
     </div>
     <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
 </body>
