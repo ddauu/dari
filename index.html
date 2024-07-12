@@ -7,37 +7,21 @@
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.9/build/spline-viewer.js"></script>
     <style>
         body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: black;
             position: relative;
             color: white;
             font-family: Arial, sans-serif;
-            overflow: hidden;
         }
         spline-viewer {
             width: 220%;
             height: 220%;
-            z-index: 0; /* Lower z-index */
         }
         .background-text {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            font-size: 2.5vw; /* Increased font size */
+            font-size: 2.5vw; 
             line-height: 1.2;
             text-align: left;
-            padding: 20px; /* Added padding */
-            z-index: 1; /* Higher z-index */
-            box-sizing: border-box;
+            padding: 20px; 
             overflow-y: scroll;
-            display: flex;
-            flex-direction: column; /* Added flex direction */
         }
     </style>
 </head>
