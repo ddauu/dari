@@ -8,10 +8,6 @@
     <style>
         body {
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: black;
             color: white;
             font-family: Arial, sans-serif;
@@ -21,20 +17,20 @@
         spline-viewer {
             width: 300%;
             height: 300%;
-            z-index: 2;
-        }
-        .background-text {
+            z-index: 1;
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
+        }
+        .background-text {
+            position: relative;
             font-size: 2.5vw; /* Increased font size */
             line-height: 1.2;
             padding: 20px; /* Added padding */
-            z-index: 0;
             box-sizing: border-box; /* Ensure padding is included in element's width and height */
-            overflow-y: scroll; /* Make text scrollable */
+            overflow-y: auto; /* Make text scrollable */
+            height: 100vh; /* Ensure it takes full height for scrolling */
+            z-index: 2;
         }
     </style>
 </head>
