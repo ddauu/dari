@@ -12,9 +12,9 @@
             color: white;
             font-family: Arial, sans-serif;
             overflow: hidden;
-            position: relative;
             height: 100vh;
             width: 100vw;
+            position: relative;
         }
         .background-text {
             position: absolute;
@@ -22,25 +22,29 @@
             left: 0;
             right: 0;
             bottom: 0;
-            font-size: 2.5vw; /* Increased font size */
+            font-size: 2.5vw;
             line-height: 1.2;
-            padding: 20px; /* Added padding */
-            box-sizing: border-box; /* Ensure padding is included in element's width and height */
-            overflow-y: scroll; /* Make text scrollable */
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: scroll;
             z-index: 1;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
         }
         .viewer-container {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 300%;
-            height: 300%;
-            z-index: 2;
+            width: 100vw; /* Adjust width as needed */
+            height: 100vh; /* Adjust height as needed */
+            z-index: 0;
         }
     </style>
 </head>
 <body>
+    <div class="viewer-container">
+        <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
+    </div>
     <div class="background-text">
         Desertification is the process by which vegetation in drylands i.e. arid and semi-arid lands, such as grasslands or shrublands, decreases and eventually disappears. The concept does not refer to the physical expansion of existing deserts, but to the various processes that threaten to turn currently non-desert ecosystems into deserts. <br><br>
         Human activities, including deforestation and the overexploitation of aquifers, accelerate desertification. The effects of climate change, which is also driven by humans, and the destruction it causes in the form of extreme weather phenomena such as droughts, hurricanes, fires, etc. must be added to this. <br><br>
@@ -56,9 +60,6 @@
         Focus on organic farming and sustainable practices, such as cover crops or rotational crops, which prevent soil erosion and drought.<br><br>
         Commit to reforestation to regenerate vegetation cover, reactivate moisture circulation and generate biodiversity.<br><br>
         Encourage rotational grazing, which limits pressure to a particular area while others regenerate, through co-existence with crops that allow more efficient nutrient cycling.<br><br>
-    </div>
-    <div class="viewer-container">
-        <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
     </div>
 </body>
 </html>
