@@ -14,6 +14,9 @@
             overflow: hidden;
             height: 100vh;
             width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
         }
         .background-text {
@@ -27,24 +30,17 @@
             padding: 20px;
             box-sizing: border-box;
             overflow-y: scroll;
-            z-index: 1;
+            z-index: 2;
             background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
         }
-        .viewer-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100vw; /* Adjust width as needed */
-            height: 100vh; /* Adjust height as needed */
-            z-index: 0;
+        spline-viewer {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
         }
     </style>
 </head>
 <body>
-    <div class="viewer-container">
-        <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
-    </div>
     <div class="background-text">
         Desertification is the process by which vegetation in drylands i.e. arid and semi-arid lands, such as grasslands or shrublands, decreases and eventually disappears. The concept does not refer to the physical expansion of existing deserts, but to the various processes that threaten to turn currently non-desert ecosystems into deserts. <br><br>
         Human activities, including deforestation and the overexploitation of aquifers, accelerate desertification. The effects of climate change, which is also driven by humans, and the destruction it causes in the form of extreme weather phenomena such as droughts, hurricanes, fires, etc. must be added to this. <br><br>
@@ -61,5 +57,6 @@
         Commit to reforestation to regenerate vegetation cover, reactivate moisture circulation and generate biodiversity.<br><br>
         Encourage rotational grazing, which limits pressure to a particular area while others regenerate, through co-existence with crops that allow more efficient nutrient cycling.<br><br>
     </div>
+    <spline-viewer url="https://prod.spline.design/vSSxG2piSnYGPTCb/scene.splinecode"></spline-viewer>
 </body>
 </html>
