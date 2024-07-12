@@ -21,7 +21,7 @@
         spline-viewer {
             width: 220%;
             height: 220%;
-            z-index: 0; /* Lower z-index */
+            z-index: 1;
         }
         .background-text {
             position: absolute;
@@ -33,11 +33,10 @@
             line-height: 1.2;
             text-align: left;
             padding: 20px; /* Added padding */
-            z-index: 1; /* Higher z-index */
+            z-index: 0;
             box-sizing: border-box;
             overflow-y: scroll;
             display: flex;
-            flex-direction: column; /* Added flex direction */
         }
     </style>
 </head>
