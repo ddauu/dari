@@ -8,13 +8,16 @@
     <style>
         body {
             background-color: black;
-            position: relative;
             color: white;
             font-family: Arial, sans-serif;
         }
         spline-viewer {
-            width: 220%;
-            height: 220%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            transform: translate(-50%, -50%);
+
         }
         .background-text {
             font-size: 2.5vw; 
